@@ -54,6 +54,28 @@
         margin-left: 1rem;
       }
     </style>
+
+    <style media="print">
+      html {
+        height: 100%;
+      }
+
+      body {
+        font-size: 1.2rem;
+        height: 100%;
+      }
+
+      main {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+
+      footer {
+        margin-top: auto;
+      }
+
+    </style>
   </head>
 
   <body>
@@ -196,7 +218,26 @@
             </ul>
           </div>
         </div>
+      </div> <!-- /container -->
 
+      <footer class="print-footer text-center d-none d-print-block">
+        <div class="row">
+          <div class="col">
+            <ul class="list-unstyled">
+              <li>Enhancing life via Technology - Transforming teams to reach for their future and accomplish their goals</li>
+              <li>
+                (312) 217-1557 - stcorbett@gmail.com -
+                <a class="d-print-none" href="https://www.linkedin.com/in/stcorbett/">LinkedIn</a>
+                <span class="d-none d-print-inline">Linkedin.com/in/stcorbett</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <main role="main" style="page-break-after: always; page-break-inside: avoid;">
+      <div class="container">
         <h2>
           <div class="center-separator">
             Education
@@ -217,7 +258,7 @@
             <p>
               HaveMyShift, Techstars Boston (2009)<br/>
               Connected Techstars with the Chicago startup community impacting the creation of Excelerate Labs and Techstars Chicago<br/>
-              Contributor: <b>Get It Out There</b>. <i>Do More Faster: Techstars Lessons to Accelerate Your Startup</i>. 2011
+              Contributor: <b>Get It Out There</b>. <i>Do More Faster: Techstars Lessons to Accelerate Your Startup</i>. 2011, 2019
             </p>
           </div>
           <div class="col-6">
@@ -240,18 +281,22 @@
           </div>
         </div>
 
-
       </div> <!-- /container -->
 
-      <footer class="container text-center mt-4">
-        <ul class="list-unstyled">
-          <li>Enhancing life via Technology - Transforming teams to reach for their future and accomplish their goals</li>
-          <li>
-            (312) 217-1557 - stcorbett@gmail.com - <a href="https://www.linkedin.com/in/stcorbett/">LinkedIn</a>
-          </li>
-        </ul>
+      <footer class="text-center">
+        <div class="row">
+          <div class="col">
+            <ul class="list-unstyled">
+              <li>Enhancing life via Technology - Transforming teams to reach for their future and accomplish their goals</li>
+              <li>
+                (312) 217-1557 - stcorbett@gmail.com -
+                <a class="d-print-none" href="https://www.linkedin.com/in/stcorbett/">LinkedIn</a>
+                <span class="d-none d-print-inline">Linkedin.com/in/stcorbett</span>
+              </li>
+            </ul>
+          </div>
+        </div>
       </footer>
-
     </main>
   </body>
 </html>
